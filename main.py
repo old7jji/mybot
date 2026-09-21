@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import datetime
 import re
-
+import os
 # تحديد الصلاحيات (Intents)
 intents = discord.Intents.default()
 intents.message_content = True
@@ -452,4 +452,4 @@ async def on_message(message):
         await message.channel.send(f"# تيت لا تطول الغيبه {message.author.mention} <:906:1551308924786053171>")
 
 # ضع التوكين الخاص بك هنا
-bot.run("MTU1MTI2MTIxOTEzNzEzMDYxOA.GrBd6U.pi7nQi3Z7oYxFtG-q8l_tz_Dvf6SVRM4bqSzVw")
+bot.run(os.environ.get("MTU1MTI2MTIxOTEzNzEzMDYxOA.GxsfOW.I4jwBrS9X9x3P7Q575zb54WMMgUFTrV8EbhEMU")
